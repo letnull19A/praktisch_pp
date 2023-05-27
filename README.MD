@@ -7,5 +7,5 @@
 
 # Запуск сервера
 
-<code>$ npm i</code>
+<code>$ npm i</code><br/>
 <code>$ npm run start</code>

@@ -1,0 +1,21 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "letnull19a",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "axios": "^1.4.0",
+    "cookieparser": "^0.1.0",
+    "eslint": "^6.7.1",
+    "express": "^4.18.2",
+    "tinymce": "^6.4.2",
+    "urlencode": "^1.1.0"
+  }
+}

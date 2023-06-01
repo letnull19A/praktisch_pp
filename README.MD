@@ -1,24 +1,4 @@
-# Упражнение 2
+# Упражнение 3
 
-- Был утановлен VSCode
-- Был настроен eslint
-
-<code>
-{
-    "extends": "eslint:recommended",
-    "env": {
-        "browser": true,
-        "node": true,
-        "es6": true
-    },
-    "rules": {
-        "no-console": 0,
-        "indent": ["warning", 2]
-    }
-}
-</code>
-
-# Запуск сервера
-
-<code>$ npm i</code><br/>
-<code>$ npm run start</code>
+- Были соданы две страницы с переходами одной к другой
+- Были добавлены Элементы: таблица, заголовки, ссылки, нумерованный список

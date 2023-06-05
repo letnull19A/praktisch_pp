@@ -1,15 +1,38 @@
 * {
   box-sizing: border-box;
 }
-.d-flex {
-  display: flex !important;
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
-.flex-middle-between {
-  place-content: center space-between;
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px auto 60px;
+  height: 97vh;
 }
-.w-100 {
-  width: 100%;
+
+#mainHeader {
+  background: #838181;
+  color: #fff;
 }
+
+.grid-b {
+  display: grid;
+  padding: 15px 10px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 5fr 1fr;
+}
+
+#mainNav {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(4, 5vw);
+}
+
 .search-form {
   display: flex;
   width: 300px;
@@ -26,60 +49,43 @@
   flex-basis: auto;
 }
 
-#mainHeader {
-  display: flex;
-  align-items: center;
-  height: 60px;
-  padding: 16px;
-  background: #838181;
-  color: #fff;
-}
-#mainNav{
-  display: flex;
-  align-items: center;
-}
-#mainNav .nav-item:not(:last-child) {
-  margin-right: 12px;
-}
-.related-articles {
-  display: flex;
-}
-.related-articles article:not(:last-child) {
-  margin-right: 16px;
-}
-#mainFoter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 60px;
-  padding: 16px;
-  background: #f1f1f1;
-}
-#footerNav .nav-item:not(:last-child) {
-  margin-right: 12px;
-}
-.links-label {
-  margin-bottom: 4px;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 main {
-  display: flex;
-  flex-direction: row-reverse;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 3fr;
+  grid-auto-flow: dense;
 }
 
 .article {
-  flex-grow: 1;
-  flex-basis: 100%;
+  grid-column: 2;
   padding-left: 1vw;
 }
 
 .news {
-  flex-shrink: 1.2;
   padding-right: 1vw;
   border-right: 1px solid #838181;
+  grid-column: 1;
+}
+
+#mainFoter {
+  border: 1px solid grey;
+  padding: 10px;
+  background: #f1f1f1;
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+#footerNav a:not(:last-child) {
+  margin-right: 12px;
+}
+
+.links-label {
+  margin-bottom: 4px;
+}
+
+.related-articles {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 160px);
 }

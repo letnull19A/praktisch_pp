@@ -1,0 +1,1 @@
+export const Heading = () => <h1>&#129422; Алексей</h1>

@@ -1,0 +1,1 @@
+export const Textbox = (props) => <p>Привет, меня зовут {props.name}. Мне {props.age}. Живу в городе {props.city} </p>
